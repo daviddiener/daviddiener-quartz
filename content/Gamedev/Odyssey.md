@@ -8,13 +8,28 @@ tags:
 ![Cover](../Assets/odyssey/cover.png)
 
 
-{{< typing_effect
-    id="typing-effect-1"
-    textId="htmlText-1"
-    speed="40"
-    deleteSpeed="10"
-    delay="1000"
->}}
+<div class="typing-effect-container">
+    <div style="font-size: 16px; display: flex; justify-content: center; align-items: center; height: 100px; overflow-y: auto; background: var(--highlight); border-radius: 8px; margin: 1rem 0; font-family: var(--codeFont);">
+        <div id="typing-effect-1">
+            <span id="htmlText-1"></span>
+            <span class="cursor">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cursor {
+        border-left: 2px solid var(--dark);
+        animation: blink 0.5s infinite;
+        margin-left: 2px;
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+</style>
 
 
 <div style="text-align: center; margin: 20px 0;"><a href="https://odyssey.daviddiener.de" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Start your Odyssey now</a></div>
