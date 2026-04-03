@@ -12,7 +12,7 @@ Creating the perfect map for a fantasy world can be a tricky, especially when it
 
 ## A Piece of a Bigger Puzzle
 
-Before we delve into the details, let me mention that the **Fantasy World Map Generator** is just a small part of a larger project called **Odyssey**. Odyssey is my ongoing endeavor to create a living procedurally generated world, backed by an open REST-API. If you're interested, you can check out more about Odyssey [here](https://www.daviddiener.de/posts/odyssey/).
+Before we delve into the details, let me mention that the **Fantasy World Map Generator** is just a small part of a larger project called **Odyssey**. Odyssey is my ongoing endeavor to create a living procedurally generated world, backed by an open REST-API. If you're interested, you can check out more about Odyssey [[Odyssey|here]].
 
 ## Technical Details
 

@@ -25,7 +25,7 @@ Ever since my first web development course in university, I’ve been tinkering 
 Odyssey isn't a standard website. It’s a text-heavy, fantastical world where you can create multiple characters and explore a procedurally generated landscape. I wanted to see if I could take the depth of a classic MUD and bring it into a modern web environment.
 
 ## Building the World
-The map is probably the most important part of the project. Instead of a fixed world, I used a Simplex Noise algorithm to generate heightmaps. It assigns a value between 0.0 and 1.0 to every coordinate, which determines things like the biome and where cities are placed. This makes the world feel much more dynamic than a traditional static RPG map.
+The map is probably the most important part of the project. Instead of a fixed world, I used a Simplex Noise algorithm to generate heightmaps. It assigns a value between 0.0 and 1.0 to every coordinate, which determines things like the biome and where cities are placed. This makes the world feel much more dynamic than a traditional static RPG map. I later even built a standalone [[FWMG|Fantasy World Map Generator]] to visualize these kinds of worlds.
 
 ## The Tech Stack
 Odyssey is split into two separate projects: a backend that handles the logic and a frontend to display everything.

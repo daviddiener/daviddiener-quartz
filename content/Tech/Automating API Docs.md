@@ -8,7 +8,7 @@ tags:
 ![Cover](../Assets/automating_api_docs/cover.png)
 
 
-As [Odyssey](https://odyssey.daviddiener.de/) grew, I quickly realized that keeping API documentation up to date by hand is not gonna be possible for a 1 person team like me. It’s tedious, it gets outdated the second you change a route, and it’s generally just not a good use of time. I wanted a way to automate the process while sticking to the "single source of truth" principle, using OpenAPI as the backbone.
+As [[Odyssey]] grew, I quickly realized that keeping API documentation up to date by hand is not gonna be possible for a 1 person team like me. It’s tedious, it gets outdated the second you change a route, and it’s generally just not a good use of time. I wanted a way to automate the process while sticking to the "single source of truth" principle, using OpenAPI as the backbone.
 
 ## OpenApi Specification
 
@@ -103,7 +103,7 @@ The optimal approach for your project depends on various factors. Consider the f
 
 - Project size and complexity: Larger or more intricate APIs might benefit from TSOA's automation capabilities.
 - Existing codebase: JsDoc integration leverages existing comments, reducing additional documentation overhead.
-- Testing strategy: If testing is a priority, Postman's testing features combined with p2o and Redoc offers the most complete solution. I choose this strategy for Odyssey, as I have a need for automated testing anyways.
+- Testing strategy: If testing is a priority, Postman's testing features combined with p2o and Redoc offers the most complete solution. I choose this strategy for [[Odyssey API|Odyssey]], as I have a need for automated testing anyways.
 
 By adopting an automated approach, you can streamline API documentation, reduce maintenance efforts, and ensure your developers and consumers have access to clear and up-to-date API specifications.
 
