@@ -8,9 +8,9 @@ cover: "cover.png"
 
 For this seminar project, I wanted to dive into making Augmented Reality (AR) apps more context-sensitive. Instead of just overlaying static images, I looked at how AR can better react to the user's environment. Specifically, I focused on two things: how information is spatially arranged and how physical obstacles affect navigation.
 
-<object data="DXP_Poster_DavidDiener.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="DXP_Poster_DavidDiener.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="DXP_Poster_DavidDiener.pdf">Download Poster</a>.</p>
+<object data="./../Assets/dxp/DXP_Poster_DavidDiener.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="./../dxp/DXP_Poster_DavidDiener.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./../dxp/DXP_Poster_DavidDiener.pdf">Download Poster</a>.</p>
     </embed>
 </object>
 
