@@ -4,9 +4,10 @@ date: 2023-12-01
 tags:
   - rust
 layout: single
-cover: "cover.png"
 draft: false
 ---
+![Cover](../Assets/aoc2023/cover.png)
+
 
 Welcome to [Advent of Code 2023](https://adventofcode.com/)! This event is designed by Eric Wastl, packed with daily coding challenges that put your problem-solving skills to the test.
 

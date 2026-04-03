@@ -3,9 +3,9 @@ title: Vortex - An Arcade Space Game for Ludum Dare 50
 date: 2022-04-30
 tags:
   - gamedev
-cover:
-  image: "cover.png"
 ---
+![Cover](../Assets/vortex/cover.png)
+
 I made **Vortex** for Ludum Dare 50. The theme was "Delay the inevitable," which I interpreted as surviving as long as possible while the sun's gravity pulls a constant stream of meteors toward you.
 
 The game is built in Unity, but I wanted to do something a bit extra for the leaderboard. Instead of using a third-party service, I built a small backend in TypeScript (Express.js) and a MongoDB database, hosted on Render. It handles score persistence and exposes a REST API that the game talks to.

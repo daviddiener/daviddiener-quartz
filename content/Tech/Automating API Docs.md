@@ -4,8 +4,9 @@ date: 2024-03-30
 tags:
   - webdev
   - gamedev
-cover: "cover.png"
 ---
+![Cover](../Assets/automating_api_docs/cover.png)
+
 
 As [Odyssey](https://odyssey.daviddiener.de/) grew, I quickly realized that keeping API documentation up to date by hand is not gonna be possible for a 1 person team like me. It’s tedious, it gets outdated the second you change a route, and it’s generally just not a good use of time. I wanted a way to automate the process while sticking to the "single source of truth" principle, using OpenAPI as the backbone.
 

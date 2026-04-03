@@ -4,8 +4,9 @@ date: 2022-02-06
 tags: 
   - SonOfOlympus
   - gamedev
-cover: "cover.png"
 ---
+![Cover](../Assets/son_of_olympus/cover.png)
+
 
 **Status: Abandoned**
 

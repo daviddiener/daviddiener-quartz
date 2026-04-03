@@ -3,8 +3,9 @@ title: GemZ - A Roman-Themed Survival Game Inspired by MineralZ
 date: 2021-01-02
 tags:
   - gamedev
-cover: "cover.png"
 ---
+![Cover](../Assets/gemz/cover.png)
+
 
 <p><strong>Status: Playable Prototype</strong></p>
 

@@ -4,8 +4,9 @@ date: 2021-04-30
 tags:
   - webdev
   - gamedev
-cover: "cover.png"
 ---
+![Cover](../Assets/odyssey/cover.png)
+
 
 {{< typing_effect
     id="typing-effect-1"

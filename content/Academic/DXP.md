@@ -3,8 +3,9 @@ title: Context-Sensitive AR - A Seminar Project Overview
 date: 2022-08-30
 tags:
   - studies
-cover: "cover.png"
 ---
+![Cover](../Assets/dxp/cover.png)
+
 
 For this seminar project, I wanted to dive into making Augmented Reality (AR) apps more context-sensitive. Instead of just overlaying static images, I looked at how AR can better react to the user's environment. Specifically, I focused on two things: how information is spatially arranged and how physical obstacles affect navigation.
 

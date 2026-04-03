@@ -3,8 +3,9 @@ title: Masterthesis - Data Model Extraction Through Adaption Of Business Process
 date: 2023-05-15
 tags:
   - studies
-cover: "cover.png"
 ---
+![Cover](../Assets/dme/cover.png)
+
 I recently completed my Master's thesis at the Karlsruher Institute of Technology, specifically at the Institute of Applied Informatics and Formal Description Methods (AIFB). My research focuses on an approach to automating the extraction of data models from business process models. I'm excited to share some key insights here.
 
 ## Industry Collaboration with Mercedes-Benz
