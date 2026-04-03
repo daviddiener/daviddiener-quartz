@@ -118,7 +118,4 @@ const createNoiseTexture = (width: number, height: number, noiseScale: number, a
 
 If you want to try it yourself, the [**Fantasy World Map Generator**](https://fwmg.daviddiener.de/) is live. It’s a fun tool for storytellers or anyone who just likes mapping out imaginary worlds.
 
-{{< button
-text="Check out FWMG on GitHub" 
-link="https://github.com/daviddiener/FantasyWorldMapGenerator" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/FantasyWorldMapGenerator" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Check out FWMG on GitHub</a></div>

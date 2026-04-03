@@ -101,10 +101,7 @@ But why did I choose R for this project? The answer is simple: because it's unco
 
 ![Bouncing DVD Simulator](bouncing_dvd_simulator.gif)
 
-{{< button
-text="Check out the Bouncing DVD Simulator on GitHub" 
-link="https://github.com/daviddiener/bouncing-dvd-simulator" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/bouncing-dvd-simulator" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Check out the Bouncing DVD Simulator on GitHub</a></div>
 
 So, if you ever find yourself with a quirky idea, don't be afraid to give it a shot, even if it means stretching the limits of your favorite programming language. You might just create something unexpectedly delightful.
 

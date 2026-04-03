@@ -18,10 +18,7 @@ If you missed my [previous post](https://www.daviddiener.de/posts/odyssey/), Ody
 
 While there is a [working frontend](https://odyssey.daviddiener.de/), I don't really consider it the "final" version of the game. Instead, it’s more of a reference implementation to show what’s possible with the API. My real goal is to provide a solid backend that other developers can use to build their own clients, tools, or unique experiences.
 
-{{< button
-text="View Odyssey Frontend on GitHub" 
-link="https://github.com/daviddiener/OdysseyFrontend" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/OdysseyFrontend" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">View Odyssey Frontend on GitHub</a></div>
 
 ## Opening up the API
 
@@ -35,7 +32,4 @@ One quick heads-up: the API is currently running on Render’s free tier. This m
 
 If you want to poke around, the API documentation is live. It covers all the endpoints and should give you everything you need to start building.
 
-{{< button
-text="View the API Docs" 
-link="https://www.daviddiener.de/odyssey_api/" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://www.daviddiener.de/odyssey_api/" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">View the API Docs</a></div>

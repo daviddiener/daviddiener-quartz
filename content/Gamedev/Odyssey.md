@@ -17,10 +17,7 @@ tags:
 >}}
 
 
-{{< button
-text="Start your Odyssey now" 
-link="https://odyssey.daviddiener.de" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://odyssey.daviddiener.de" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Start your Odyssey now</a></div>
 
 Ever since my first web development course in university, I’ve been tinkering with projects, mostly using the MEAN stack. Since I’m also a game developer, I eventually tried to combine both. The result is Odyssey: a web app that’s part Multi-User Dungeon (MUD), part simulator, and part RPG. It’s a long-term project that I keep adding to in my free time.
 

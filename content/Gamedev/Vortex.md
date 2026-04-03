@@ -14,22 +14,13 @@ I also spent some time in Unity's Shader Graph to create a starfield effect with
 
 It was a fun 48-hour sprint, and I'm happy with how the final version turned out.
 
-{{< button 
-text="Play Vortex on Itch.io" 
-link="https://davidjs.itch.io/vortex" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://davidjs.itch.io/vortex" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Play Vortex on Itch.io</a></div>
 
 **Screenshots:**
 
 ![Image of the player ship flying through a field of meteors](vortex_1.png)
 ![Image of the leaderboard screen](vortex_2.png)
 
-{{< button
-text="Unity Source on GitHub" 
-link="https://github.com/daviddiener/vortex" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/vortex" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Unity Source on GitHub</a></div>
 
-{{< button
-text="Backend Source on GitHub" 
-link="https://github.com/daviddiener/vortex-backend" 
->}}
+<div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/vortex-backend" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Backend Source on GitHub</a></div>
