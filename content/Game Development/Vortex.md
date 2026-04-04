@@ -1,10 +1,11 @@
 ---
 title: Vortex - An Arcade Space Game for Ludum Dare 50
 date: 2022-04-30
+cover: ../Assets/vortex/cover.png
 tags:
   - gamedev
 ---
-![Cover](../../Assets/vortex/cover.png)
+![Cover](../Assets/vortex/cover.png)
 
 I made **Vortex** for Ludum Dare 50. The theme was "Delay the inevitable," which I interpreted as surviving as long as possible while the sun's gravity pulls a constant stream of meteors toward you.
 

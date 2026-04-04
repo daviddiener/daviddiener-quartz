@@ -1,11 +1,12 @@
 ---
 title: Son Of Olympus
 date: 2022-02-06
+cover: ../Assets/son_of_olympus/cover.png
 tags: 
   - SonOfOlympus
   - gamedev
 ---
-![Cover](../../Assets/son_of_olympus/cover.png)
+![Cover](../Assets/son_of_olympus/cover.png)
 
 
 **Status: Abandoned**

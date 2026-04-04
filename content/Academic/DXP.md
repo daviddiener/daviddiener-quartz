@@ -1,6 +1,7 @@
 ---
 title: Context-Sensitive AR - A Seminar Project Overview
 date: 2022-08-30
+cover: ../Assets/dxp/cover.png
 tags:
   - studies
 ---

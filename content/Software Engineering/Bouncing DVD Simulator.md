@@ -1,10 +1,11 @@
 ---
 title: Having Fun With R - The Bouncing DVD Simulator
 date: 2021-05-13
+cover: ../Assets/bouncing_dvd_simulator/cover.png
 tags:
   - misc
 ---
-![Cover](../../Assets/bouncing_dvd_simulator/cover.png)
+![Cover](../Assets/bouncing_dvd_simulator/cover.png)
 
 
 In the world of data analysis and statistical modeling, R is a powerful tool. It's widely used for tasks like data visualization, machine learning, and statistical analysis. But what if you wanted to step out of the conventional uses of R to do something more creative? That's what I did during my spare time while taking a course at the Karlsruhe Institute of Technology (KIT) on "Modeling and Analyzing Consumer Behavior with R." In this blog post, I'll introduce you to a project I call the "bouncing-dvd-simulator."

@@ -1,12 +1,13 @@
 ---
 title: Odyssey - A MUD Simulation Environment
 date: 2021-04-30
+cover: ../Assets/odyssey/cover.png
 tags:
   - webdev
   - gamedev
   - odyssey-series
 ---
-![Cover](../../Assets/odyssey/cover.png)
+![Cover](../Assets/odyssey/cover.png)
 
 
 <div class="typing-effect-container">
