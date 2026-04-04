@@ -11,6 +11,7 @@ export const sharedPageComponents: SharedLayout = {
         title: "Latest Notes",
         limit: 10,
         showTags: true,
+        filter: (f) => !f.slug?.startsWith("AAA_Meta/"),
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
@@ -20,6 +21,8 @@ export const sharedPageComponents: SharedLayout = {
       GitHub: "https://github.com/daviddiener",
       LinkedIn: "https://www.linkedin.com/in/david-diener/",
       Twitter: "https://x.com/diener_david_",
+      Impressum: "/AAA_Meta/impressum",
+      "Privacy Policy": "/AAA_Meta/privacy-policy",
     },
   }),
 }
@@ -48,7 +51,9 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => node.slugSegment !== "tags" && node.slugSegment !== "AAA_Meta",
+    }),
   ],
   right: [
     Component.Graph(),
@@ -72,7 +77,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => node.slugSegment !== "tags" && node.slugSegment !== "AAA_Meta",
+    }),
   ],
   right: [],
 }

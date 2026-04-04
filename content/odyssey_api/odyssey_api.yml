@@ -1,0 +1,1447 @@
+openapi: 3.0.0
+info:
+  title: Odyssey API
+  description: Odyssey - A MUD Simulation Environment
+  version: 0.2.5
+  x-logo:
+    url: https://odyssey.daviddiener.de/favicon.ico
+    backgroundColor: '#FFFFFF'
+    altText: Odyssey logo
+  termsOfService: Link to TOS tbd
+  contact:
+    name: David Diener
+    url: https://www.daviddiener.de/
+externalDocs:
+  url: https://www.daviddiener.de/posts/odyssey/
+  description: Find more info about the Odyssey project here
+servers:
+  - url: http://api.daviddiener.de/api/
+    description: Production environment server
+components:
+  securitySchemes:
+    noauthAuth:
+      type: http
+      scheme: noauth
+    bearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []
+tags:
+  - name: Users
+  - name: Regions
+  - name: Cities
+  - name: Characters
+paths:
+  /register:
+    post:
+      tags:
+        - Users
+      summary: Register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: test_username
+                email: test@mail.com
+                password: Test#1234
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '362'
+            ETag:
+              schema:
+                type: string
+                example: W/"16a-PzMyXFLsCeX+2qr1T/sMMeb62yE"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:55:52 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                _id: 6607631846156c222279decc
+                email: test@mail.com
+                name: test_username
+                role: basic
+                token: >-
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3NjMxODQ2MTU2YzIyMjI3OWRlY2MiLCJlbWFpbCI6InRlc3RAbWFpbC5jb20iLCJuYW1lIjoidGVzdF91c2VybmFtZSIsInJvbGUiOiJiYXNpYyIsImV4cCI6MTcxMjM2MTM1MiwiaWF0IjoxNzExNzYwMTUyfQ._xb7zXHmCzaKt7yYvlAV4s4LURXVhhblCGWxv6crdBU
+  /login:
+    post:
+      tags:
+        - Users
+      summary: Login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: admin@mail.com
+                password: theadmin
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '261'
+            ETag:
+              schema:
+                type: string
+                example: W/"105-ckqdt/Z2+9zS3ELrg27wHt6ijfs"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:54:38 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                token: >-
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY5MDVlOThlNjJhYjczNWJlZjQ5MWQiLCJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwibmFtZSI6InRoZWFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzEyMzYxMjc4LCJpYXQiOjE3MTE3NjAwNzh9.yz54HxLwcgCIpTs_h2Tmob7j7pPhYeq2zViACYMKncs
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Get All Users
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '94'
+            ETag:
+              schema:
+                type: string
+                example: W/"5e-a+t/Sc4YkLyZ9DKjLh67sdOAZHk"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:54:49 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - _id: 64f905e98e62ab735bef491d
+                  email: admin@mail.com
+                  name: theadmin
+                  role: admin
+  /profile:
+    get:
+      tags:
+        - Users
+      summary: Get Profile
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '92'
+            ETag:
+              schema:
+                type: string
+                example: W/"5c-bLOK0jz0QTvovvCy/sgf2IeGKhY"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:55:01 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                _id: 64f905e98e62ab735bef491d
+                email: admin@mail.com
+                name: theadmin
+                role: admin
+  /users/{userId}:
+    get:
+      tags:
+        - Users
+      summary: Get User
+      parameters:
+        - name: userId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '96'
+            ETag:
+              schema:
+                type: string
+                example: W/"60-vQrDm7lWMhFgZR3v0/nHqEmdunA"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:55:57 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                _id: 6607631846156c222279decc
+                email: test@mail.com
+                name: test_username
+                role: basic
+    put:
+      tags:
+        - Users
+      summary: Update User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Paul
+      parameters:
+        - name: userId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '87'
+            ETag:
+              schema:
+                type: string
+                example: W/"57-RH/vqw6zGkB72uDPl3AwbyeogUE"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:56:15 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                _id: 6607631846156c222279decc
+                email: test@mail.com
+                name: Paul
+                role: basic
+    delete:
+      tags:
+        - Users
+      summary: Delete User
+      parameters:
+        - name: userId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '82'
+            ETag:
+              schema:
+                type: string
+                example: W/"52-axq6YXzi6oFAkrgfCxHvKST47EQ"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:56:24 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: >-
+                  user 6607631846156c222279decc (and his objects) successfully
+                  deleted
+  /users/:
+    delete:
+      tags:
+        - Users
+      summary: Delete All Users
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '70'
+            ETag:
+              schema:
+                type: string
+                example: W/"46-VIxZvP1yWblkM03iYN1HfRRuBZg"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:56:32 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: All basic users (and their objects) successfully deleted
+  /regions:
+    post:
+      tags:
+        - Regions
+      summary: Post Region
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/x-www-form-urlencoded
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '574'
+            ETag:
+              schema:
+                type: string
+                example: W/"23e-FFSkxXtrrqWzoo2QS+fCcAUhjk0"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:57:24 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                name: Westerlight
+                seed: 149427031942982
+                type: sand
+                _id: 6607637446156c222279df04
+                cities:
+                  - name: Northdell
+                    description: Beloved Terrain
+                    regionId: 6607637446156c222279df04
+                    type: none
+                    owner: neutral
+                    date: '2024-03-30T00:57:24.422Z'
+                    _id: 6607637446156c222279df05
+                  - name: Westerden
+                    description: Smart Nation
+                    regionId: 6607637446156c222279df04
+                    type: none
+                    owner: neutral
+                    date: '2024-03-30T00:57:24.422Z'
+                    _id: 6607637446156c222279df07
+                createdDate: '2024-03-30T00:57:24.422Z'
+                x: -2
+                'y': -2
+                noise: 0.00012838323696722604
+                __v: 0
+    get:
+      tags:
+        - Regions
+      summary: Get All Regions
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '7539'
+            ETag:
+              schema:
+                type: string
+                example: W/"1d73-p/E9Q73rxC9Uk9XuOeeh0KLZh8Y"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:57:35 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - _id: 65063e233c902202ba252d3b
+                  name: The Sea
+                  seed: 679253249125352
+                  type: water
+                  cities: []
+                  createdDate: '2023-09-16T23:45:39.756Z'
+                  x: -1
+                  'y': 1
+                  noise: -0.4202607543750001
+                  __v: 0
+                - _id: 65063e233c902202ba252d33
+                  name: The Sea
+                  seed: 589683212490371
+                  type: water
+                  cities: []
+                  createdDate: '2023-09-16T23:45:39.260Z'
+                  x: 0
+                  'y': 1
+                  noise: -0.21440770326171876
+                  __v: 0
+                - _id: 65063e223c902202ba252d25
+                  name: Sealand
+                  seed: 51572102008941
+                  type: grass
+                  cities:
+                    - name: Bellyn
+                      description: Past Sanctuary
+                      regionId: 65063e223c902202ba252d25
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:38.440Z'
+                      _id: 65063e223c902202ba252d26
+                    - name: Moorley
+                      description: Handmade Forrest
+                      regionId: 65063e223c902202ba252d25
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:38.441Z'
+                      _id: 65063e223c902202ba252d28
+                  createdDate: '2023-09-16T23:45:38.439Z'
+                  x: 1
+                  'y': 0
+                  noise: 0.21440770326171876
+                  __v: 0
+                - _id: 65063e253c902202ba252d55
+                  name: Brookville
+                  seed: 225289439593268
+                  type: grass
+                  cities:
+                    - name: Westerlyn
+                      description: Shocking Expanse
+                      regionId: 65063e253c902202ba252d55
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:41.704Z'
+                      _id: 65063e253c902202ba252d56
+                    - name: Whitefair
+                      description: Paltry Country
+                      regionId: 65063e253c902202ba252d55
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:41.705Z'
+                      _id: 65063e253c902202ba252d58
+                  createdDate: '2023-09-16T23:45:41.704Z'
+                  x: 1
+                  'y': -1
+                  noise: 0.4202607543750001
+                  __v: 0
+                - _id: 65063e253c902202ba252d51
+                  name: Deepfield
+                  seed: 715408079106697
+                  type: grass
+                  cities:
+                    - name: Fairsage
+                      description: Plastic Terrain
+                      regionId: 65063e253c902202ba252d51
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:41.240Z'
+                      _id: 65063e253c902202ba252d52
+                  createdDate: '2023-09-16T23:45:41.239Z'
+                  x: 0
+                  'y': -1
+                  noise: 0.21440770326171896
+                  __v: 0
+                - _id: 65063e243c902202ba252d49
+                  name: Prybank
+                  seed: 665541639874274
+                  type: sand
+                  cities:
+                    - name: Watermont
+                      description: Slushy Nation
+                      regionId: 65063e243c902202ba252d49
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:40.870Z'
+                      _id: 65063e243c902202ba252d4a
+                    - name: Ironmill
+                      description: Attentive Vale
+                      regionId: 65063e243c902202ba252d49
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:40.871Z'
+                      _id: 65063e243c902202ba252d4c
+                    - name: Falconhaven
+                      description: Serene Country
+                      regionId: 65063e243c902202ba252d49
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:40.872Z'
+                      _id: 65063e243c902202ba252d4e
+                  createdDate: '2023-09-16T23:45:40.869Z'
+                  x: -1
+                  'y': -1
+                  noise: 0
+                  __v: 0
+                - _id: 65063e203c902202ba252d20
+                  name: Goldspring
+                  seed: 255242212629051
+                  type: sand
+                  cities:
+                    - name: Edgewick
+                      description: Thin Forrest
+                      regionId: 65063e203c902202ba252d20
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:36.822Z'
+                      _id: 65063e203c902202ba252d21
+                  createdDate: '2023-09-16T23:45:36.817Z'
+                  x: 0
+                  'y': 0
+                  noise: 0
+                  __v: 0
+                - _id: 65063e243c902202ba252d41
+                  name: The Sea
+                  seed: 615817729679509
+                  type: water
+                  cities: []
+                  createdDate: '2023-09-16T23:45:40.319Z'
+                  x: -1
+                  'y': 0
+                  noise: -0.21440770326171896
+                  __v: 0
+                - _id: 65063e223c902202ba252d2b
+                  name: Coldapple
+                  seed: 758637949476325
+                  type: sand
+                  cities:
+                    - name: Deepsnow
+                      description: Bad Domain
+                      regionId: 65063e223c902202ba252d2b
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:38.874Z'
+                      _id: 65063e223c902202ba252d2c
+                    - name: Goldcoast
+                      description: Deficient Country
+                      regionId: 65063e223c902202ba252d2b
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:38.876Z'
+                      _id: 65063e223c902202ba252d2e
+                    - name: Shadedell
+                      description: Juvenile Nation
+                      regionId: 65063e223c902202ba252d2b
+                      type: none
+                      owner: neutral
+                      date: '2023-09-16T23:45:38.876Z'
+                      _id: 65063e223c902202ba252d30
+                  createdDate: '2023-09-16T23:45:38.871Z'
+                  x: 1
+                  'y': 1
+                  noise: 0
+                  __v: 0
+                - _id: 66075e3a696d6d8aa263ca09
+                  name: The Sea
+                  seed: 892818546098121
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:35:06.075Z'
+                  x: 2
+                  'y': 2
+                  noise: -0.00012838323696722604
+                  __v: 0
+                - _id: 6607602946156c222279dd15
+                  name: Ornesse
+                  seed: 284257050729897
+                  type: grass
+                  cities:
+                    - name: Waytown
+                      description: Scratchy Empire
+                      regionId: 6607602946156c222279dd15
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:43:21.615Z'
+                      _id: 6607602946156c222279dd16
+                    - name: Marbleiron
+                      description: Clear Dominion
+                      regionId: 6607602946156c222279dd15
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:43:21.617Z'
+                      _id: 6607602946156c222279dd18
+                  createdDate: '2024-03-30T00:43:21.613Z'
+                  x: 2
+                  'y': 0
+                  noise: 0.40353607
+                  __v: 0
+                - _id: 6607603946156c222279dd50
+                  name: Pinepond
+                  seed: 942807191598129
+                  type: grass
+                  cities:
+                    - name: Greyway
+                      description: Joyous Empire
+                      regionId: 6607603946156c222279dd50
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:43:37.586Z'
+                      _id: 6607603946156c222279dd51
+                    - name: Dorwynne
+                      description: Our Isle
+                      regionId: 6607603946156c222279dd50
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:43:37.586Z'
+                      _id: 6607603946156c222279dd53
+                    - name: Erimoor
+                      description: Zigzag Lake
+                      regionId: 6607603946156c222279dd50
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:43:37.587Z'
+                      _id: 6607603946156c222279dd55
+                  createdDate: '2024-03-30T00:43:37.586Z'
+                  x: 2
+                  'y': 1
+                  noise: 0.19768172607421874
+                  __v: 0
+                - _id: 6607604a46156c222279dd90
+                  name: The Sea
+                  seed: 740677835922164
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:43:54.448Z'
+                  x: 2
+                  'y': 2
+                  noise: -0.00012838323696722604
+                  __v: 0
+                - _id: 6607604b46156c222279ddc8
+                  name: The Sea
+                  seed: 28930607345608
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:43:55.813Z'
+                  x: 1
+                  'y': 2
+                  noise: -0.19768172607421874
+                  __v: 0
+                - _id: 6607604d46156c222279de07
+                  name: The Sea
+                  seed: 237916616503307
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:43:57.339Z'
+                  x: 0
+                  'y': 2
+                  noise: -0.40353607
+                  __v: 0
+                - _id: 6607604e46156c222279de40
+                  name: The Sea
+                  seed: 203821948401622
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:43:58.728Z'
+                  x: -1
+                  'y': 2
+                  noise: -0.5930451782226563
+                  __v: 0
+                - _id: 660762b746156c222279de95
+                  name: The Sea
+                  seed: 483475520777830
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:54:15.265Z'
+                  x: -2
+                  'y': 2
+                  noise: -0.7431767164125416
+                  __v: 0
+                - _id: 6607634a46156c222279ded5
+                  name: The Sea
+                  seed: 331308907745561
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:56:42.142Z'
+                  x: -2
+                  'y': 1
+                  noise: -0.5930451782226561
+                  __v: 0
+                - _id: 6607636f46156c222279def4
+                  name: The Sea
+                  seed: 63424306646609
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:57:19.936Z'
+                  x: -2
+                  'y': 0
+                  noise: -0.40353606999999986
+                  __v: 0
+                - _id: 6607637246156c222279defe
+                  name: The Sea
+                  seed: 221485258759067
+                  type: water
+                  cities: []
+                  createdDate: '2024-03-30T00:57:22.952Z'
+                  x: -2
+                  'y': -1
+                  noise: -0.19768172607421847
+                  __v: 0
+                - _id: 6607637446156c222279df04
+                  name: Westerlight
+                  seed: 149427031942982
+                  type: sand
+                  cities:
+                    - name: Northdell
+                      description: Beloved Terrain
+                      regionId: 6607637446156c222279df04
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:57:24.422Z'
+                      _id: 6607637446156c222279df05
+                    - name: Westerden
+                      description: Smart Nation
+                      regionId: 6607637446156c222279df04
+                      type: none
+                      owner: neutral
+                      date: '2024-03-30T00:57:24.422Z'
+                      _id: 6607637446156c222279df07
+                  createdDate: '2024-03-30T00:57:24.422Z'
+                  x: -2
+                  'y': -2
+                  noise: 0.00012838323696722604
+                  __v: 0
+  /regions/{regionid}/cities:
+    get:
+      tags:
+        - Cities
+      summary: Get City
+      parameters:
+        - name: regionid
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '378'
+            ETag:
+              schema:
+                type: string
+                example: W/"17a-XFCySH5VL+Dkxx1XNdeWvy2j3wM"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 00:57:43 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - name: Northdell
+                  description: Beloved Terrain
+                  regionId: 6607637446156c222279df04
+                  type: none
+                  owner: neutral
+                  date: '2024-03-30T00:57:24.422Z'
+                  _id: 6607637446156c222279df05
+                - name: Westerden
+                  description: Smart Nation
+                  regionId: 6607637446156c222279df04
+                  type: none
+                  owner: neutral
+                  date: '2024-03-30T00:57:24.422Z'
+                  _id: 6607637446156c222279df07
+  /characters:
+    post:
+      tags:
+        - Characters
+      summary: Create Target Character
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Jane The Target Character
+                gender: '1'
+                regionId: 65063e253c902202ba252d55
+                cityId: 65063e253c902202ba252d56
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '235'
+            ETag:
+              schema:
+                type: string
+                example: W/"eb-rKX15XZMFLyyavxFO/4mlF+1BGY"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:11:46 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                name: John
+                gender: false
+                regionId: 65063e243c902202ba252d49
+                cityId: 65063e243c902202ba252d4a
+                hp: 100
+                strength: 10
+                agility: 10
+                intelligence: 10
+                _id: 660766d2113874b442c41fe7
+                userId: 64f905e98e62ab735bef491d
+                __v: 0
+    get:
+      tags:
+        - Characters
+      summary: Get All Characters
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '945'
+            ETag:
+              schema:
+                type: string
+                example: W/"3b1-ohiHfEoVEbgoEARQZReqoa+j+wM"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:11:57 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - _id: 6506440714c4f2e8fa2d80f1
+                  name: Lara
+                  gender: true
+                  regionId: 65063e253c902202ba252d55
+                  cityId: 65063e253c902202ba252d56
+                  hp: 100
+                  strength: 10
+                  agility: 10
+                  intelligence: 10
+                  userId: 64f905e98e62ab735bef491d
+                  __v: 0
+                - _id: 650643fa14c4f2e8fa2d80e6
+                  name: David
+                  gender: false
+                  regionId: 65063e203c902202ba252d20
+                  cityId: 65063e203c902202ba252d21
+                  hp: 100
+                  strength: 10
+                  agility: 10
+                  intelligence: 10
+                  userId: 64f905e98e62ab735bef491d
+                  __v: 0
+                - _id: 6506440114c4f2e8fa2d80eb
+                  name: Paul
+                  gender: false
+                  regionId: 65063e253c902202ba252d51
+                  cityId: 65063e253c902202ba252d52
+                  hp: 100
+                  strength: 10
+                  agility: 10
+                  intelligence: 10
+                  userId: 64f905e98e62ab735bef491d
+                  __v: 0
+                - _id: 660766d2113874b442c41fe7
+                  name: John
+                  gender: false
+                  regionId: 65063e243c902202ba252d49
+                  cityId: 65063e243c902202ba252d4a
+                  hp: 100
+                  strength: 10
+                  agility: 10
+                  intelligence: 10
+                  userId: 64f905e98e62ab735bef491d
+                  __v: 0
+    delete:
+      tags:
+        - Characters
+      summary: Delete All Characters (Admin Only)
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '49'
+            ETag:
+              schema:
+                type: string
+                example: W/"31-l+b5xCW6A2/tyjVcfZBJOONKn7M"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:12:50 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: All characters successfully deleted
+  /characters/{charid}:
+    get:
+      tags:
+        - Characters
+      summary: Get Character by ID
+      parameters:
+        - name: charid
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '235'
+            ETag:
+              schema:
+                type: string
+                example: W/"eb-tvN25lQ95mI9Z3YEKgt/F9Bc1s4"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:12:09 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                _id: 660766d2113874b442c41fe7
+                name: John
+                gender: false
+                regionId: 65063e243c902202ba252d49
+                cityId: 65063e243c902202ba252d4a
+                hp: 100
+                strength: 10
+                agility: 10
+                intelligence: 10
+                userId: 64f905e98e62ab735bef491d
+                __v: 0
+    delete:
+      tags:
+        - Characters
+      summary: Delete Character
+      parameters:
+        - name: charid
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '69'
+            ETag:
+              schema:
+                type: string
+                example: W/"45-BwR3HuXZUUVXh+yJ/BUg/31OXc0"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:12:34 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: character 660766d2113874b442c41fe7 successfully deleted
+  /characters/{charid}/move:
+    put:
+      tags:
+        - Characters
+      summary: Move Character
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                cityId: 65063e253c902202ba252d56
+      parameters:
+        - name: charid
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '20'
+            ETag:
+              schema:
+                type: string
+                example: W/"14-mrEJW5XL2lLUYuBcjfX82padWPo"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:12:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: Moving
+  /characters/{charid}/attack:
+    put:
+      tags:
+        - Characters
+      summary: Attack Character
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                targetId: '{{charidTarget}}'
+      parameters:
+        - name: charid
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Vary:
+              schema:
+                type: string
+                example: Origin
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '20'
+            ETag:
+              schema:
+                type: string
+                example: W/"14-mrEJW5XL2lLUYuBcjfX82padWPo"
+            Date:
+              schema:
+                type: string
+                example: Sat, 30 Mar 2024 01:12:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: Moving

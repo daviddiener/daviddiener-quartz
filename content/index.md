@@ -4,7 +4,7 @@ date: 1998-01-10
 ---
 Hi there 👋 I'm David.
 
-This is my personal space where I collect notes I find worth sharing and document the things I'm building. I work as a software developer, and in my spare time, I run two small businesses focused on #gamedev and #webdev.
+This is my personal space where I collect notes I find worth sharing and document the things I'm building. I work as a software developer, and in my spare time, I run two small businesses focused on game development and web automation.
 
 **Currently building:**
 - **Day Job**: To cite my own [LinkedIn Profile](https://www.linkedin.com/in/david-diener/), I am *working on a web-based HMI solution, because factories need sleek interfaces too*.
@@ -12,3 +12,9 @@ This is my personal space where I collect notes I find worth sharing and documen
 - **[Diener Brothers GbR](https://www.dienerbrothers.de/)**: Developing _Grey_, a real-time strategy god game built with Godot.
 
 Feel free to explore!
+
+## Some past projects hosted under *.daviddiener.de
+- [[Odyssey]] --> https://odyssey.daviddiener.de
+- [[FWMG]] --> https://fwmg.daviddiener.de
+- [[Data Model Extraction]]  --> https://dme.daviddiener.de
+
