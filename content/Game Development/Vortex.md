@@ -1,11 +1,10 @@
 ---
 title: Vortex - An Arcade Space Game for Ludum Dare 50
 date: 2022-04-30
-cover: ../Assets/vortex/cover.png
 tags:
   - gamedev
 ---
-![Cover](../Assets/vortex/cover.png)
+![Cover](AAA_Meta/attachments/vortex/cover.png)
 
 I made **Vortex** for Ludum Dare 50. The theme was "Delay the inevitable," which I interpreted as surviving as long as possible while the sun's gravity pulls a constant stream of meteors toward you.
 
@@ -19,8 +18,8 @@ It was a fun 48-hour sprint, and I'm happy with how the final version turned out
 
 **Screenshots:**
 
-![Image of the player ship flying through a field of meteors](vortex_1.png)
-![Image of the leaderboard screen](vortex_2.png)
+![Image of the player ship flying through a field of meteors](AAA_Meta/attachments/vortex/vortex_1.png)
+![Image of the leaderboard screen](AAA_Meta/attachments/vortex/vortex_2.png)
 
 <div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/vortex" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Unity Source on GitHub</a></div>
 

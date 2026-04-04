@@ -1,18 +1,17 @@
 ---
 title: Context-Sensitive AR - A Seminar Project Overview
 date: 2022-08-30
-cover: ../Assets/dxp/cover.png
 tags:
   - studies
 ---
-![Cover](../Assets/dxp/cover.png)
+![Cover](AAA_Meta/attachments/dxp/cover.png)
 
 
 For this seminar project, I wanted to dive into making Augmented Reality (AR) apps more context-sensitive. Instead of just overlaying static images, I looked at how AR can better react to the user's environment. Specifically, I focused on two things: how information is spatially arranged and how physical obstacles affect navigation.
 
-<object data="./../Assets/dxp/DXP_Poster_DavidDiener.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="./../dxp/DXP_Poster_DavidDiener.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./../dxp/DXP_Poster_DavidDiener.pdf">Download Poster</a>.</p>
+<object data="../AAA_Meta/attachments/dxp/DXP_Poster_DavidDiener.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../AAA_Meta/attachments/dxp/DXP_Poster_DavidDiener.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="AAA_Meta/attachments/dxp/DXP_Poster_DavidDiener.pdf">Download Poster</a>.</p>
     </embed>
 </object>
 
@@ -49,7 +48,7 @@ My seminar paper aims to push the boundaries of what's possible in context-sensi
 
 If you want to take a look at the full paper, you can download it below.
 
-<div style="text-align: center; margin: 20px 0;"><a href="DXP_Implementation_of_a_context_sensitive_augmented_reality_application.pdf" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Download Paper</a></div>
+<div style="text-align: center; margin: 20px 0;"><a href="AAA_Meta/attachments/dxp/DXP_Implementation_of_a_context_sensitive_augmented_reality_application.pdf" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Download Paper</a></div>
 
 ## References
 

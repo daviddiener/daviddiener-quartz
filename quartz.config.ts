@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "www.daviddiener.de",
-    ignorePatterns: ["AAA_Meta", "private", ".obsidian"],
+    ignorePatterns: ["AAA_Meta/templates", "private", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

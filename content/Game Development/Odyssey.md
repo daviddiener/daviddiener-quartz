@@ -1,13 +1,12 @@
 ---
 title: Odyssey - A MUD Simulation Environment
 date: 2021-04-30
-cover: ../Assets/odyssey/cover.png
 tags:
   - webdev
   - gamedev
   - odyssey-series
 ---
-![Cover](../Assets/odyssey/cover.png)
+![Cover](AAA_Meta/attachments/odyssey/cover.png)
 
 
 <div class="typing-effect-container">
@@ -50,7 +49,7 @@ Odyssey is split into two separate projects: a backend that handles the logic an
 ### Odyssey Frontend
 The frontend uses **Angular** for the main UI and **Phaser.js** for the world map. Angular handles the data and state, while Phaser takes care of rendering the map and making it interactive.
 
-![Frontend](frontend.png)
+![Frontend](AAA_Meta/attachments/odyssey/frontend.png)
 
 ### Odyssey Backend
 The backend is built with **Express.js**. It acts as a REST API, serving up data for regions, cities, and characters. It also handles the boring but necessary stuff like user authentication and secure sessions.

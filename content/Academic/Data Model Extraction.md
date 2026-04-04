@@ -1,11 +1,10 @@
 ---
 title: Masterthesis - Data Model Extraction Through Adaption Of Business Process Models
 date: 2023-05-15
-cover: ../Assets/dme/cover.png
 tags:
   - studies
 ---
-![Cover](../Assets/dme/cover.png)
+![Cover](AAA_Meta/attachments/dme/cover.png)
 
 I recently completed my Master's thesis at the Karlsruher Institute of Technology, specifically at the Institute of Applied Informatics and Formal Description Methods (AIFB). My research focuses on an approach to automating the extraction of data models from business process models. I'm excited to share some key insights here.
 
@@ -22,12 +21,12 @@ In the early phases of software development, two critical tasks often come into 
 To address this challenge, I introduced a novel variant of High-Level Petri Nets, termed XML-Data-Nets. This extension enables the representation of more complex relationships and objects, making data model extraction more accurate and efficient. 
 
 **Example of a basic XDN model**
-![Example of a basic XDN model](basic_xdn_model.jpg)
+![Example of a basic XDN model](AAA_Meta/attachments/dme/basic_xdn_model.jpg)
 
 I also formulated three rulesets to guide the extraction of classes, associations, and attributes, culminating in a logical UML Class Diagram that serves as a robust foundation for software development.
 
 **Overview of the three rulesets for the extraction of a Conceptual Data Model from a Business Process Model**
-![Overview of the three rulesets for the extraction of a Conceptual Data Model from a Business Process Model](dme_rulesets.jpg)
+![Overview of the three rulesets for the extraction of a Conceptual Data Model from a Business Process Model](AAA_Meta/attachments/dme/dme_rulesets.jpg)
 
 ## The Prototype Application: Data Model Extractor
 
@@ -46,6 +45,6 @@ While the initial results are promising, there's some room for further research 
 
 Thank you for taking the time to delve into my research. I'm confident that this work represents a significant advancement in the field and has the potential to benefit various stakeholders, including potential employers looking for innovative problem-solving skills. For a more in-depth look, you can access my full thesis below.
 
-<div style="text-align: center; margin: 20px 0;"><a href="Data_model_extraction_through_adaption_of_business_process_models.pdf" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Download PDF</a></div>
+<div style="text-align: center; margin: 20px 0;"><a href="AAA_Meta/attachments/dme/Data_model_extraction_through_adaption_of_business_process_models.pdf" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Download PDF</a></div>
 
 Feel free to reach out for any questions, collaborations, or opportunities. I'm always open to engaging in meaningful dialogues that push the boundaries of what's possible in software development.

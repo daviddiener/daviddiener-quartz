@@ -1,13 +1,12 @@
 ---
 title: Crafting Fantasy Worlds - The Fantasy World Map Generator
 date: 2023-09-10
-cover: ../Assets/fwmg/cover.png
 tags:
   - webdev
   - gamedev
   - odyssey-series
 ---
-![Cover](../Assets/fwmg/cover.png)
+![Cover](AAA_Meta/attachments/fwmg/cover.png)
 
 
 Creating the perfect map for a fantasy world can be a tricky, especially when it's based on predefined datasets. That's where the **Fantasy World Map Generator** comes into play.
@@ -20,7 +19,7 @@ Before we delve into the details, let me mention that the **Fantasy World Map Ge
 
 ### Perturbation
 
-One of the challenges in creating a fantasy world map is achieving the right balance between structure and randomness. In the world of Odyssey, regions are grid-based, starting at coordinates (0, 0) and spiraling outward. [Here](regions.json) is a sample of 100 Odyssey region objects that I use as input data for this project. To add a touch of unpredictability, I decided to perturbate these coordinates based on noise values and proximity to neighboring regions. This approach transforms a seemingly structured world into one that looks and feels much more natural.
+One of the challenges in creating a fantasy world map is achieving the right balance between structure and randomness. In the world of Odyssey, regions are grid-based, starting at coordinates (0, 0) and spiraling outward. [Here](AAA_Meta/attachments/fwmg/regions.json) is a sample of 100 Odyssey region objects that I use as input data for this project. To add a touch of unpredictability, I decided to perturbate these coordinates based on noise values and proximity to neighboring regions. This approach transforms a seemingly structured world into one that looks and feels much more natural.
 
 Perturbation is a technique commonly used in data visualization to introduce a controlled level of randomness to data points' positions. By perturbing coordinates, you can create visualizations that appear more natural and less mechanical. The core idea is to add random variations to data points while considering their proximity to neighboring points. The approach I used: 
 
@@ -32,13 +31,13 @@ Perturbation is a technique commonly used in data visualization to introduce a c
 
 ### Voronoi Diagrams and Fortune's Algorithm
 
-![Fortune's Algorithm in Action](Fortunes-algorithm-slowed.gif)
+![Fortune's Algorithm in Action](AAA_Meta/attachments/fwmg/Fortunes-algorithm-slowed.gif)
 
 To give the world map a even more organic feel, I employed [Fortune's Algorithm](https://w.wiki/7evZ), a well-known technique in computational geometry. This algorithm helps create Voronoi diagrams, which, in simple terms, define the borders of different regions on the map. It adds character to the map, making each regions shape unique.
 
 ### Simulating Rivers
 
-![River Generation](fwmg_rivers.png)
+![River Generation](AAA_Meta/attachments/fwmg/fwmg_rivers.png)
 
 Rivers are essential for any fantasy map. To generate them, I used a relatively simple approach: simulating water flow based on elevation (noise values). Rivers naturally find the lowest path through the terrain. It’s not a perfect simulation, but it adds a lot of realism.
 
@@ -87,7 +86,7 @@ Here's a simplified breakdown of the function's core logic:
 
 ### Adding Texture to Biomes
 
-![Noise Texture](noise_texture.png)
+![Noise Texture](AAA_Meta/attachments/fwmg/noise_texture.png)
 
 Finally, I added a custom noise texture to make the biomes look less flat. Each biome starts with a base color—like yellow for sand or white for snow—and the noise texture adds subtle variations to give it some character.
 

@@ -1,11 +1,10 @@
 ---
 title: Having Fun With R - The Bouncing DVD Simulator
 date: 2021-05-13
-cover: ../Assets/bouncing_dvd_simulator/cover.png
 tags:
   - misc
 ---
-![Cover](../Assets/bouncing_dvd_simulator/cover.png)
+![Cover](AAA_Meta/attachments/bouncing_dvd_simulator/cover.png)
 
 
 In the world of data analysis and statistical modeling, R is a powerful tool. It's widely used for tasks like data visualization, machine learning, and statistical analysis. But what if you wanted to step out of the conventional uses of R to do something more creative? That's what I did during my spare time while taking a course at the Karlsruhe Institute of Technology (KIT) on "Modeling and Analyzing Consumer Behavior with R." In this blog post, I'll introduce you to a project I call the "bouncing-dvd-simulator."
@@ -14,7 +13,7 @@ In the world of data analysis and statistical modeling, R is a powerful tool. It
 
 Do you remember those old DVD players with a screensaver that involved a DVD logo bouncing around the screen, seemingly never hitting the corners? It was a simple but addictive scene, and it used to keep me entertained as I waited for the logo to finally hit one of the corners. This screensaver is not only nostalgic but also quite iconic.
 
-![Original DVD Screensaver](original_dvd_screensaver.gif)
+![Original DVD Screensaver](AAA_Meta/attachments/bouncing_dvd_simulator/original_dvd_screensaver.gif)
 
 I couldn't help but wonder if I could replicate this screensaver in R, a language primarily designed for data science and statistical analysis. After all, one of the great things about programming is that it allows you to experiment and create things outside of your normal use cases.
 
@@ -100,7 +99,7 @@ The code creates a black background window, sets up the field boundaries, and in
 
 But why did I choose R for this project? The answer is simple: because it's unconventional. R is not the first choice for creating games or animations, but that's precisely what made this project so interesting. It allowed me to challenge the boundaries of what R can do and gave me a different perspective on the language.
 
-![Bouncing DVD Simulator](bouncing_dvd_simulator.gif)
+![Bouncing DVD Simulator](AAA_Meta/attachments/bouncing_dvd_simulator/bouncing_dvd_simulator.gif)
 
 <div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/bouncing-dvd-simulator" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Check out the Bouncing DVD Simulator on GitHub</a></div>
 

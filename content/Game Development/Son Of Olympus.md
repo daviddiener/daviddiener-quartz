@@ -1,12 +1,11 @@
 ---
 title: Son Of Olympus
 date: 2022-02-06
-cover: ../Assets/son_of_olympus/cover.png
 tags: 
   - SonOfOlympus
   - gamedev
 ---
-![Cover](../Assets/son_of_olympus/cover.png)
+![Cover](AAA_Meta/attachments/son_of_olympus/cover.png)
 
 
 **Status: Abandoned**
@@ -18,13 +17,13 @@ I used the [RTS Engine](https://gamedevspice.com/assets/rts-engine/) asset to ha
 Here are some screenshots of the game in its current state:
 
 **Town center and barracks**
-![Landscape showing a town center and barracks](soo_001.png)
+![Landscape showing a town center and barracks](AAA_Meta/attachments/son_of_olympus/soo_001.png)
 
 **Environment details**
-![Landscape with some details](soo_002.jpg)
+![Landscape with some details](AAA_Meta/attachments/son_of_olympus/soo_002.jpg)
 
 **Spearman (left) and Servant (right)**
-![Spearman (left) and Servant (right) in front of the town center](soo_003.png)
+![Spearman (left) and Servant (right) in front of the town center](AAA_Meta/attachments/son_of_olympus/soo_003.png)
 
 **Town center close-up**
-![Details on the town center](soo_004.png)
+![Details on the town center](AAA_Meta/attachments/son_of_olympus/soo_004.png)

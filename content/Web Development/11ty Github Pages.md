@@ -1,11 +1,10 @@
 ---
 title: How to Set Up an 11ty Blog on GitHub Pages
 date: 2023-03-03
-cover: ../Assets/11tyGithubPages/cover.png
 tags:
   - webdev
 ---
-![Cover](../Assets/11tyGithubPages/cover.png)
+![Cover](AAA_Meta/attachments/11tyGithubPages/cover.png)
 
 
 I recently built this site to share notes from my studies and updates on my gamedev projects. In the past, I leaned towards overkill solutions like WordPress for projects that I would quickly move on from. Eventually, I found Publii, a static site generator I used for quite a while and would still recommend, especially if you aren't particularly tech-savvy.
