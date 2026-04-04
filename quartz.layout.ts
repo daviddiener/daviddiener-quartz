@@ -7,7 +7,11 @@ export const sharedPageComponents: SharedLayout = {
   header: [Component.TypingEffect()],
   afterBody: [
     Component.ConditionalRender({
-      component: Component.PhotoGallery(),
+      component: Component.RecentNotes({
+        title: "Latest Notes",
+        limit: 10,
+        showTags: true,
+      }),
       condition: (page) => page.fileData.slug === "index",
     }),
   ],
@@ -46,10 +50,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.ConditionalRender({
-      component: Component.Graph(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
