@@ -5,7 +5,7 @@ tags:
   - SonOfOlympus
   - gamedev
 ---
-![Cover](../Assets/son_of_olympus/cover.png)
+![Cover](../../Assets/son_of_olympus/cover.png)
 
 
 **Status: Abandoned**

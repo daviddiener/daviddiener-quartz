@@ -4,8 +4,9 @@ date: 2024-02-10
 tags:
   - webdev
   - gamedev
+  - odyssey-series
 ---
-![Cover](../Assets/odyssey_api/cover.png)
+![Cover](../../Assets/odyssey_api/cover.png)
 
 
 I’ve reached a major milestone with Odyssey: the REST API is finally live and ready to use.

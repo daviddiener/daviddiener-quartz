@@ -4,7 +4,7 @@ date: 2021-01-02
 tags:
   - gamedev
 ---
-![Cover](../Assets/gemz/cover.png)
+![Cover](../../Assets/gemz/cover.png)
 
 
 <p><strong>Status: Playable Prototype</strong></p>

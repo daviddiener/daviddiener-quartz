@@ -5,7 +5,7 @@ tags:
   - music
   - unity
 ---
-![Cover](../Assets/apollon/cover.png)
+![Cover](../../Assets/apollon/cover.png)
 
 
 As a pianist and software developer, I always wanted to create a tool that would allow me to visualize the notes played on a piano in real-time. Inspired by the videos of [Patrik Pietschmann](https://www.youtube.com/channel/UCs7O9sOUQiBGBxaaAguIwig), I decided to develop Apollon, a piano midi visualizer tool using Unity.

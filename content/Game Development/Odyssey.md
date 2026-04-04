@@ -4,8 +4,9 @@ date: 2021-04-30
 tags:
   - webdev
   - gamedev
+  - odyssey-series
 ---
-![Cover](../Assets/odyssey/cover.png)
+![Cover](../../Assets/odyssey/cover.png)
 
 
 <div class="typing-effect-container">

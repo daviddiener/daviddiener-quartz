@@ -4,8 +4,9 @@ date: 2023-09-10
 tags:
   - webdev
   - gamedev
+  - odyssey-series
 ---
-![Cover](../Assets/fwmg/cover.png)
+![Cover](../../Assets/fwmg/cover.png)
 
 
 Creating the perfect map for a fantasy world can be a tricky, especially when it's based on predefined datasets. That's where the **Fantasy World Map Generator** comes into play.
