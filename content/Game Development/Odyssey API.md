@@ -25,12 +25,14 @@ While there is a [[Odyssey|working frontend]], I don't really consider it the "f
 
 By opening up the Odyssey REST API, I’m making the entire virtual universe accessible. You can fetch region details, manage character attributes, and interact with basically every part of the game logic. I’m really curious to see if anyone actually builds something with it.
 
+Why setting up this API I also wrote a short guide about how to [[Automating API Docs|automate API documentation]], so check that out if you want to minimize the overhead here.
+
 ## A Note on Hosting
 
 One quick heads-up: the API is currently running on Render’s free tier. This means it might take a few seconds to "wake up" if it hasn't been accessed in a while. I’ve experimented with a self-hosted solution, but for the current scale, this is the most practical setup. I’ll look into upgrading if the traffic ever demands it.
 
 ## Getting Started
 
-If you want to poke around, the [[Automating API Docs|API documentation]] is live. It covers all the endpoints and should give you everything you need to start building.
+If you want to poke around, the API documentation is live. It covers all the endpoints and should give you everything you need to start building.
 
-<div style="text-align: center; margin: 20px 0;"><a href="odyssey_api/api.htm" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">View the API Docs</a></div>
+<div style="text-align: center; margin: 20px 0;"><a href="AAA_Meta/odyssey_api/api.htm" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">View the API Docs</a></div>
