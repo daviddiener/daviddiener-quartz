@@ -1,20 +1,19 @@
 ---
-title: Welcome to my digital garden
+title: Hi there 👋 I'm David.
 date: 1998-01-10
 ---
-Hi there 👋 I'm David.
+This is my personal space where I collect notes I find worth sharing and document the things I'm building.
 
-This is my personal space where I collect notes I find worth sharing and document the things I'm building. I work as a software developer, and in my spare time, I run two small businesses focused on game development and web automation.
-
-**Currently building:**
-- **Day Job**: To cite my own [LinkedIn Profile](https://www.linkedin.com/in/david-diener/), I am *working on a web-based HMI solution, because factories need sleek interfaces too*.
-- **[enarQ GmbH](http://enarq.de/)**: Automating the creation of legally compliant real estate energy certificates.
+##### What I do
+- **Software Development at Bosch**: To cite my own [LinkedIn Profile](https://www.linkedin.com/in/david-diener/), I am *working on a web-based HMI solution, because factories need sleek interfaces too*.
+- **[enarQ GmbH](https://enarq.de/)**: Automating the creation of legally compliant real estate energy certificates.
 - **[Diener Brothers GbR](https://www.dienerbrothers.de/)**: Developing _Grey_, a real-time strategy god game built with Godot.
 
-Feel free to explore!
+##### What I did
+- [[Odyssey]] --> [odyssey.daviddiener.de](https://odyssey.daviddiener.de/home)
+	- [[Odyssey API]] running on [api.daviddiener.de](https://api.daviddiener.de/)
+- [[FWMG]] --> [fwmg.daviddiener.de](https://fwmg.daviddiener.de/)
+- [[Data Model Extraction]]  --> [dme.daviddiener.de](https://dme.daviddiener.de/)
 
-## Some past projects hosted under *.daviddiener.de
-- [[Odyssey]] --> https://odyssey.daviddiener.de
-- [[FWMG]] --> https://fwmg.daviddiener.de
-- [[Data Model Extraction]]  --> https://dme.daviddiener.de
+Feel free to explore!
 
