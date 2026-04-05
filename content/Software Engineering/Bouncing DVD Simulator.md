@@ -2,7 +2,7 @@
 title: Having Fun With R - The Bouncing DVD Simulator
 date: 2021-05-13
 tags:
-  - misc
+  - swe
 ---
 ![Cover](AAA_Meta/attachments/bouncing_dvd_simulator/cover.png)
 

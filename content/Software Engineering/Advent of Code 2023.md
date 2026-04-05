@@ -3,7 +3,7 @@ title: Advent Of Code 2023 - Solving Puzzles in Rust
 date: 2023-12-01
 tags:
   - rust
-layout: single
+  - swe
 draft: false
 ---
 ![Cover](AAA_Meta/attachments/aoc2023/cover.png)

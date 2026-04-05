@@ -8,16 +8,11 @@ tags:
 ---
 ![Cover](AAA_Meta/attachments/fwmg/cover.png)
 
-
-Creating the perfect map for a fantasy world can be a tricky, especially when it's based on predefined datasets. That's where the **Fantasy World Map Generator** comes into play.
-
-## A Piece of a Bigger Puzzle
-
 Before we delve into the details, let me mention that the **Fantasy World Map Generator** is just a small part of a larger project called **Odyssey**. Odyssey is my ongoing endeavor to create a living procedurally generated world, backed by an open REST-API. If you're interested, you can check out more about Odyssey [[Odyssey|here]].
 
-## Technical Details
+I created this world map generator program as some kind of tech demo that eventually should be merged in to the [Odyssey Frontend](https://github.com/daviddiener/OdysseyFrontend) so that it can replace the existing world map feature.
 
-### Perturbation
+## Perturbation
 
 One of the challenges in creating a fantasy world map is achieving the right balance between structure and randomness. In the world of Odyssey, regions are grid-based, starting at coordinates (0, 0) and spiraling outward. [Here](AAA_Meta/attachments/fwmg/regions.json) is a sample of 100 Odyssey region objects that I use as input data for this project. To add a touch of unpredictability, I decided to perturbate these coordinates based on noise values and proximity to neighboring regions. This approach transforms a seemingly structured world into one that looks and feels much more natural.
 
@@ -28,14 +23,13 @@ Perturbation is a technique commonly used in data visualization to introduce a c
 - Accumulates perturbations based on proximity to neighbors.
 - Applies the perturbations and scaling to the coordinates.
 
-
-### Voronoi Diagrams and Fortune's Algorithm
+## Voronoi Diagrams and Fortune's Algorithm
 
 ![Fortune's Algorithm in Action](AAA_Meta/attachments/fwmg/Fortunes-algorithm-slowed.gif)
 
 To give the world map a even more organic feel, I employed [Fortune's Algorithm](https://w.wiki/7evZ), a well-known technique in computational geometry. This algorithm helps create Voronoi diagrams, which, in simple terms, define the borders of different regions on the map. It adds character to the map, making each regions shape unique.
 
-### Simulating Rivers
+## Simulating Rivers
 
 ![River Generation](AAA_Meta/attachments/fwmg/fwmg_rivers.png)
 
@@ -84,7 +78,7 @@ Here's a simplified breakdown of the function's core logic:
 - **River Path**: If the chosen cell is a "water" type cell, we include its coordinates in the riverPath array to represent a point along the river's path.
 - **Completion**: If we can't find a suitable neighbor, the loop stops, indicating the end of the river's path.
 
-### Adding Texture to Biomes
+## Adding Texture to Biomes
 
 ![Noise Texture](AAA_Meta/attachments/fwmg/noise_texture.png)
 
@@ -117,6 +111,6 @@ const createNoiseTexture = (width: number, height: number, noiseScale: number, a
 
 ## Try it out
 
-If you want to try it yourself, the [**Fantasy World Map Generator**](https://fwmg.daviddiener.de/) is live. It’s a fun tool for storytellers or anyone who just likes mapping out imaginary worlds.
+If you want to try it yourself, the [**Fantasy World Map Generator**](https://fwmg.daviddiener.de/) is live. It’s a fun tool for anyone who just likes mapping out imaginary worlds.
 
 <div style="text-align: center; margin: 20px 0;"><a href="https://github.com/daviddiener/FantasyWorldMapGenerator" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">Check out FWMG on GitHub</a></div>
