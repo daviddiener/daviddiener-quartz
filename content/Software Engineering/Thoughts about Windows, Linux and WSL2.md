@@ -1,6 +1,6 @@
 ---
 title: Thoughts about Windows, Linux and WSL2
-date: 2026-04-05
+date: 2026-03-23
 tags:
   - swe
 ---

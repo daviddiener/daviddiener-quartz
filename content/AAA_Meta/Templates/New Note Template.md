@@ -1,9 +1,9 @@
 ---
 title:
-  "{ title }":
+  {{title}}
 date:
-  "{ date }":
+  {{date}}
 tags:
   - empty
-draft: false
+draft: true
 ---
