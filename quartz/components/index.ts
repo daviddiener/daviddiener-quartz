@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TypingEffect from "./TypingEffect"
+import SocialLinks from "./SocialLinks"
 
 export {
   ArticleTitle,
@@ -52,4 +53,5 @@ export {
   Flex,
   ConditionalRender,
   TypingEffect,
+  SocialLinks,
 }

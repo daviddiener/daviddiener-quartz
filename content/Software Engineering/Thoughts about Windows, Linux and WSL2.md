@@ -5,6 +5,7 @@ tags:
   - swe
 ---
 After years of switching between dual boots, Linux only and Windows only, my development environment has (temporarily?) settled into a middle ground that works for both my professional and personal projects. Here some of my history with Linux and how I currently use WSL2 to keep my main Windows system clean.
+
 ## My history with Linux so far
 
 Ever since I started tinkering around with computers I was constantly shifting my main Desktop OS from Windows to Linux.
@@ -24,6 +25,7 @@ And then every since I used WSL2 I never really had the need to switch to a full
 	- The official German Ausweis App is Windows only (there is however a Linux port available but I didn't try that out yet)
 
 My job at Bosch also requires me to use Windows, mainly because we support Beckhoff PLCs in [HMInow](https://www.hmi.now/), and its kind of mandatory to have the TwinCAT (The **Windows** Control and Automation Technology) runtime available at all times for testing. Of course that's one a whole different device than my personal laptop but I like to commit to one Desktop OS overall. 
+
 ## WSL2 as isolated environments
 
 Now that we have such excellent WSL2 support on Windows I like the idea to just install all my development tools into the isolated WSL2 Ubuntu instance, so I don't clutter my main host OS. So that's why all my development tools like node (incl. global packages), Hugo, Go, Rust , ... now live inside a WSL2 instance. 

@@ -20,7 +20,6 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/daviddiener",
       LinkedIn: "https://www.linkedin.com/in/david-diener/",
-      Twitter: "https://x.com/diener_david_",
       Impressum: "/AAA_Meta/impressum",
       "Privacy Policy": "/AAA_Meta/privacy-policy",
     },
@@ -35,7 +34,19 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
-    Component.ContentMeta(),
+    Component.ConditionalRender({
+      component: Component.SocialLinks({
+        links: {
+          GitHub: "https://github.com/daviddiener",
+          LinkedIn: "https://www.linkedin.com/in/david-diener/",
+        },
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.ContentMeta(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.TagList(),
   ],
   left: [
