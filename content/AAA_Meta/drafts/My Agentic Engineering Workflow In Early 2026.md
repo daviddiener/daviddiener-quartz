@@ -15,6 +15,3 @@ draft: true
   *   Use /dir add commands for repo cross references (list equivalents in other cli versions)
   * Constant git work tree control (call-out https://quartz.jzhao.xyz/features/callouts)
   *   Also reference the 8 levels of Agentic Engineering and why level 8 is not giving the promised results
-
-
-

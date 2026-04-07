@@ -1,4 +1,12 @@
 # daviddiener
+
+
+Symlinked via
+```bash
+C:\DATEN\10_Projects\daviddiener-quartz>mklink /J "content" "C:\Users\david\Meine Ablage\Dokumente\Obsidian\daviddiener\50_Public"
+Verbindung erstellt für content <<===>> C:\Users\david\Meine Ablage\Dokumente\Obsidian\daviddiener\50_Public
+```
+
 Build with 
 
 ```
