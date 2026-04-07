@@ -1,9 +1,9 @@
 ---
-title: "Impressum"
+title: Impressum
 date: 2026-03-28T10:00:00+01:00
 draft: false
+permalink: impressum
 ---
-
 <p>Angaben gemäß § 5 DDG</p> 
 <p>David Diener<br> 
 <br> 

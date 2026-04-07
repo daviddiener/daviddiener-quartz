@@ -20,8 +20,8 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/daviddiener",
       LinkedIn: "https://www.linkedin.com/in/david-diener/",
-      Impressum: "/AAA_Meta/impressum",
-      "Privacy Policy": "/AAA_Meta/privacy-policy",
+      Impressum: "/impressum",
+      "Privacy Policy": "/privacy-policy",
     },
   }),
 }

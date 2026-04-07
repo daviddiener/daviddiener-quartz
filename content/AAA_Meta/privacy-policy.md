@@ -1,7 +1,8 @@
 ---
-title: "Privacy Policy"
+title: Privacy Policy
 date: 2026-03-28T10:00:00+01:00
 draft: false
+permalink: privacy-policy
 ---
 
 ## 1. Datenschutz auf einen Blick
