@@ -11,13 +11,11 @@ After years of switching between dual boots, Linux only and Windows only, my dev
 
 Ever since I started tinkering around with computers I was constantly shifting my main Desktop OS from Windows to Linux.
 
-- Ubuntu: An old Laptop running Uubuntu with Gnome. I guess I was around 10 years old when my parents gave me this laptop. There was this game called [Robots](https://wiki.ubuntuusers.de/Spiele/Robots/) that scared me a lot because of the unexpectedly loud sound when the robots got you.  
+- Ubuntu: An old Laptop running Ubuntu with Gnome. I guess I was around 10 years old when my parents gave me this laptop. There was this game called [Robots](https://wiki.ubuntuusers.de/Spiele/Robots/) that scared me a lot because of the unexpectedly loud sound when the robots got you.  
 - Ubuntu Dual Boot: I had this on my Desktop PC for a long time in my teenage years and gained a lot of experience with the OS.
 - Kali Linux: Right after I watched Mr. Robot
 - Arch Linux: When I had to much free time while studying
 - Ubuntu on WSL2: Ever since WSL2 launched back in 2019
-
-I used arch btw
 
 And then every since I used WSL2 I never really had the need to switch to a full Linux Desktop environment or a dual boot anymore. That does not mean that I don't have the urge to do it. My life is just easier with Windows as the main OS, mainly because
 - Game Development is still Windows centric (even though Linux lately breaks record after record on Steam usage statistics)
