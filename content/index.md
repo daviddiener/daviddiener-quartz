@@ -11,7 +11,7 @@ This is my personal space where I collect notes I find worth sharing and documen
 
 ##### What I did
 - [[Odyssey]] --> [odyssey.daviddiener.de](https://odyssey.daviddiener.de/home)
-	- [[Odyssey API]] running on [api.daviddiener.de](https://api.daviddiener.de/)
+	- [[2024-02-10 Odyssey API | Odyssey API]] running on [api.daviddiener.de](https://api.daviddiener.de/)
 - [[FWMG]] --> [fwmg.daviddiener.de](https://fwmg.daviddiener.de/)
 - [[Data Model Extraction]]  --> [dme.daviddiener.de](https://dme.daviddiener.de/)
 

@@ -9,7 +9,7 @@ tags:
 
 In the world of data analysis and statistical modeling, R is a powerful tool. It's widely used for tasks like data visualization, machine learning, and statistical analysis. But what if you wanted to step out of the conventional uses of R to do something more creative? That's what I did during my spare time while taking a course at the Karlsruhe Institute of Technology (KIT) on "Modeling and Analyzing Consumer Behavior with R." In this blog post, I'll introduce you to a project I call the "bouncing-dvd-simulator."
 
-## The Nostalgic Inspiration
+## Inspiration
 
 Do you remember those old DVD players with a screensaver that involved a DVD logo bouncing around the screen, seemingly never hitting the corners? It was a simple but addictive scene, and it used to keep me entertained as I waited for the logo to finally hit one of the corners. This screensaver is not only nostalgic but also quite iconic.
 
@@ -17,7 +17,7 @@ Do you remember those old DVD players with a screensaver that involved a DVD log
 
 I couldn't help but wonder if I could replicate this screensaver in R, a language primarily designed for data science and statistical analysis. After all, one of the great things about programming is that it allows you to experiment and create things outside of your normal use cases.
 
-## The Bouncing-DVD-Simulator Project
+## Bouncing-DVD-Simulator in R
 
 I started by creating a new R script, setting up the environment, and defining the essential parameters for the project. I used an external window to display the screensaver and created a field where the DVD logo would bounce.
 

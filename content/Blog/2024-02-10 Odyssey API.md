@@ -25,7 +25,7 @@ While there is a [[Odyssey|working frontend]], I don't really consider it the "f
 
 By opening up the Odyssey REST API, I’m making the entire virtual universe accessible. You can fetch region details, manage character attributes, and interact with basically every part of the game logic. I’m really curious to see if anyone actually builds something with it.
 
-Why setting up this API I also wrote a short guide about how to [[Automating API Docs|automate API documentation]], so check that out if you want to minimize the overhead here.
+Why setting up this API I also wrote a short guide about how to [[2024-03-30 Automating API Docs|automate API documentation]], so check that out if you want to minimize the overhead here.
 
 ## A Note on Hosting
 

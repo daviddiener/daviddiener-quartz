@@ -3,6 +3,7 @@ title: Thoughts about Windows, Linux and WSL2
 date: 2026-03-23
 tags:
   - swe
+draft: false
 ---
 After years of switching between dual boots, Linux only and Windows only, my development environment has (temporarily?) settled into a middle ground that works for both my professional and personal projects. Here some of my history with Linux and how I currently use WSL2 to keep my main Windows system clean.
 
@@ -30,8 +31,7 @@ My job at Bosch also requires me to use Windows, mainly because we support Beckh
 
 Now that we have such excellent WSL2 support on Windows I like the idea to just install all my development tools into the isolated WSL2 Ubuntu instance, so I don't clutter my main host OS. So that's why all my development tools like node (incl. global packages), Hugo, Go, Rust , ... now live inside a WSL2 instance. 
 
-Lately I also did a lot of switching around between different LLM Client CLIs like OpenCode and Gemini CLI. Those isolated WSL2 were also create to play around with global configs and when the installation is messed up completely I can just delete it and spin up the next Ubuntu instance.
-
+Lately I also did a lot of switching between different LLM Client CLIs like OpenCode and Gemini CLI. Those isolated WSL2 were also great to play around with global configs. And when the installation is messed up completely, I can just delete it and spin up the next Ubuntu instance.
 ## Working with multiple WSL2 instances 
 After reading this comment section about the [WSL manager](https://news.ycombinator.com/item?id=47299505)on Hackernews, I started messing around with multiple WSL2 instances in parallel. To save yourself from setting up all your base tools again and again you can symlink your configs across instances or from your windows host into the WSL2 instance:
 
@@ -40,4 +40,3 @@ ln -s /mnt/c/Users/david/.gemini ~/.gemini
 ```
 
 Thats how I keep my Gemini CLI config up to date in all my development environments.
-

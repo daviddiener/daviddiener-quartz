@@ -104,7 +104,7 @@ The optimal approach for your project depends on various factors. Consider the f
 
 - Project size and complexity: Larger or more intricate APIs might benefit from TSOA's automation capabilities.
 - Existing codebase: JsDoc integration leverages existing comments, reducing additional documentation overhead.
-- Testing strategy: If testing is a priority, Postman's testing features combined with p2o and Redoc offers the most complete solution. I choose this strategy for [[Odyssey API|Odyssey]], as I have a need for automated testing anyways.
+- Testing strategy: If testing is a priority, Postman's testing features combined with p2o and Redoc offers the most complete solution. I choose this strategy for [[2024-02-10 Odyssey API|Odyssey]], as I have a need for automated testing anyways.
 
 By adopting an automated approach, you can streamline API documentation, reduce maintenance efforts, and ensure your developers and consumers have access to clear and up-to-date API specifications.
 
