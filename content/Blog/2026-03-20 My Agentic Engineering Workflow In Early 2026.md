@@ -49,7 +49,15 @@ This is why its mandatory to always check the git diffs that the agent produces.
 
 ![[Pasted image 20260411203218.png]]
 
-Controlling the git worktree yourself also makes in mandatory to forbid the execution of all git commands that do any kind of write operations. That means that stuff like `git commit`, `git push`and `git add` are forbidden, while explorative tools like `git log` should still be allowed.
+Controlling the git worktree yourself also makes in mandatory to forbid the execution of all git commands that do any kind of write operations. That means that stuff like `git commit`, `git push`and `git add` are forbidden, while explorative tools like `git log` should still be allowed. To enforce this in the Gemini CLI, create a **~\\.gemini\policies\rules.toml** file with the following content:
+```
+# Disallow Git write/modification commands
+[[rule]]
+toolName = "run_shell_command"
+argsPattern = ".*git[\\s]+(commit|push|add|rm|mv|rebase|merge|reset|stash|clean|cherry-pick).*\""
+decision = "deny"
+priority = 100
+```
 
 ### Conclusion
 Now at the end of writing this post, I noticed I did not even touch the topic of MCPs. I really only ever use the quite popular Context7 MCP. Other than that I feel the importance of MCP not really holding up to the hype that we still had last year when they came up. 

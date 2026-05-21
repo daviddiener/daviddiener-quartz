@@ -38,3 +38,8 @@ ln -s /mnt/c/Users/david/.gemini ~/.gemini
 ```
 
 Thats how I keep my Gemini CLI config up to date in all my development environments.
+
+
+> [!info] Update 2026-05-02
+> 
+> I switched to dual-booting running Ubuntu as my main OS now 🫠
