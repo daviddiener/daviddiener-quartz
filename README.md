@@ -32,10 +32,7 @@ Build with
 npx quartz build --serve
 ```
 
-Push with
-```
-npx quartz Sync
-```
+Push by commiting and pushing (the default quartz sync script has issues with how we mount the content folder)
 
 # Quartz v4
 
