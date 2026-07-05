@@ -247,9 +247,13 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                       },
                     }
                   } else if ([".mp4", ".webm", ".ogv", ".mov", ".mkv"].includes(ext)) {
+                    let attrs = "controls"
+                    if (alias) {
+                      attrs = alias
+                    }
                     return {
                       type: "html",
-                      value: `<video src="${url}" controls></video>`,
+                      value: `<video src="${url}" ${attrs}></video>`,
                     }
                   } else if (
                     [".mp3", ".webm", ".wav", ".m4a", ".ogg", ".3gp", ".flac"].includes(ext)
@@ -398,9 +402,10 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           return (tree: Root, _file) => {
             visit(tree, "image", (node, index, parent) => {
               if (parent && index != undefined && videoExtensionRegex.test(node.url)) {
+                const attrs = node.alt ? node.alt : "controls"
                 const newNode: Html = {
                   type: "html",
-                  value: `<video controls src="${node.url}"></video>`,
+                  value: `<video src="${node.url}" ${attrs}></video>`,
                 }
 
                 parent.children.splice(index, 1, newNode)
